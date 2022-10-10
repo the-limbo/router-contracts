@@ -1,0 +1,47 @@
+{
+    "name": "the-limbo/router-contracts",
+    "type": "library",
+    "description": "Generic abstractions for router.",
+    "keywords": [
+        "the-limbo",
+        "contracts",
+        "router",
+        "middleware",
+        "dispatcher",
+        "psr-15"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dr0n1k",
+            "email": "a.dronov4job@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Limbo\\Contracts\\Router\\": "./src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "the-limbo/container-contracts": "dev-master",
+        "the-limbo/factory-contracts": "dev-master",
+        "psr/http-server-middleware": "dev-master",
+        "psr/http-server-handler": "dev-master",
+        "psr/http-message": "dev-master",
+        "psr/http-factory": "dev-master"
+    },
+    "provide": {
+        "the-limbo/factory-contracts-implementation": "dev-master",
+        "psr/http-server-middleware-implementation": "dev-master",
+        "psr/http-server-handler-implementation": "dev-master"
+    },
+    "suggest": {
+        "the-limbo/router-contracts-implementation": ""
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}
